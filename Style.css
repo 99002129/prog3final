@@ -1,0 +1,51 @@
+body {
+  background-color: lightblue;
+}
+ svg text {
+   font-family: Sans-serif;
+   letter-spacing: 10px;
+   stroke: #00BF37;
+   font-size: 150px;
+   font-weight: 700;
+   stroke-width: 3;
+  
+   animation: textAnimate 3s infinite alternate;
+   
+ }
+ 
+ @keyframes textAnimate {
+   0% {
+     stroke-dasharray: 0 50%;
+     stroke-dashoffset:  20%;
+     fill:gray;
+ 
+   }
+   
+   100% {
+     stroke-dasharray: 50% 0;
+     stroke-dashoffstet: -20%;
+     fill: hsla(189, 68%, 75%,0%)
+   }
+   
+ }
+ .button {
+    background-color: #00BF37; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+ 
+#defaultCanvas0{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+div{
+  height:200px;
+}
